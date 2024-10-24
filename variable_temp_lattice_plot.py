@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 # Parameters
 L = int(input("Enter the number of lattice points in one dimension: "))
@@ -89,3 +90,5 @@ plt.ylabel("Magnetization per spin")
 plt.title("Magnetization per spin for various temperatures")
 plt.legend()
 plt.savefig("magnetization_plot.png")  # Save the plot to a file
+current_directory = os.getcwd()
+print(current_directory)
